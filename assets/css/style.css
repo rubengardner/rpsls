@@ -14,3 +14,16 @@ body{
   font-family: 'Teko', sans-serif;
   
 }
+
+ /*Header*/
+
+ header{
+    text-align: center;
+    padding: 10px;
+  }
+  
+  header li{
+    display:inline-block;
+    text-decoration: none;
+    padding: 10px;
+  }
