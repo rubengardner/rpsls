@@ -147,3 +147,47 @@ table{
 .enemy-style{
   color: #730041;
 }
+
+
+/* Game section*/
+#game-section{
+  text-align: center;
+  font-size: 14pt;
+  
+}
+
+
+#enemy{
+  border:#000 2px solid;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top:20px;
+  padding:5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#result-area{
+  width: 50%;
+  position: absolute;
+  left: 26%;
+  
+  top:160px;
+}
+
+#user-area{
+  border:#000 2px solid;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top:225px;
+  padding:5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#weapon-area{
+  position: absolute;
+  width:80%;
+  left: 12%;
+  top:350px;
+}
