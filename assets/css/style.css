@@ -27,3 +27,18 @@ body{
     text-decoration: none;
     padding: 10px;
   }
+
+  /*Footer*/
+footer{
+  text-align: center;
+}
+footer li{
+  display:inline-block;
+  text-decoration: none;
+  padding: 10px 20px 0 20px;
+  font-size: 200%;
+}
+
+footer i{
+  color: #000;
+}
