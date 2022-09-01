@@ -105,7 +105,29 @@
           </section>
 
         <section id="game-section">
-
+            <div id="enemy">
+                <h3> Enemy's choice</h3>
+                <div id="enemy-display" class="display-weapons"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                 <!--Enemy's life-->
+                <div id="enemy-life">
+                  <progress id="enemy-health" value="50" max="50"></progress>
+                </div>
+              </div> 
+                  
+              <div id="result-area">
+                <h3 id="result"> Waiting for your move</h3>
+                <p id="result-text">...</p>
+              </div>
+              
+              <div id="user-area">
+                <h3> Your choice</h3>
+                <!--Weapon selection display-->
+                <div id="user-display" class="display-weapons" ><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                <!--User's life-->
+                <div id="user-life">
+                <progress id="user-health" value="50" max="50"></progress>
+                </div>
+            </div>   
         </section>
 
         <section id="feedback-section">
