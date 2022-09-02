@@ -129,3 +129,18 @@ function userWin(){
     }else{
     document.getElementById('result-text').innerText = 'VICTORY';
     }}
+
+    function enemyWin(){
+        let health = document.getElementById("user-health");
+        let logoUser=  document.getElementById('user-display');
+        let logoEnemy = document.getElementById('enemy-display');
+        health.value -= 10;
+    
+        if (health.value === 0){
+            let defeatPopup =  document.getElementById("game-result");
+            let message= document.getElementById("result-message");
+            defeatPopup.style.visibility='visible';
+            message.innerText="You lost!";
+        }else{
+            document.getElementById('result-text').innerText = 'DEFEAT';
+        }}    
