@@ -115,3 +115,17 @@ function battle(weapon1, weapon2){
         alert('Unknow variable')
     }
 }
+
+function userWin(){
+    let health = document.getElementById("enemy-health")
+    health.value -= 10;
+  
+    if (health.value === 0){
+        let victoryPopup= document.getElementById("game-result");
+        let message= document.getElementById("result-message");
+        victoryPopup.style.visibility='visible';
+        message.innerText="You won!";
+       
+    }else{
+    document.getElementById('result-text').innerText = 'VICTORY';
+    }}
