@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function(){
 }})
 
 
+function enemyWeapon(){
+    weapons=['rock', 'paper', 'scissor', 'lizard', 'spock'];
+    weaponChoice = weapons[Math.floor(Math.random()*weapons.length)];
+    return weaponChoice;
+}
 //Returns winner of between user and enemy
 function battle(weapon1, weapon2){
     
