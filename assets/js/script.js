@@ -144,3 +144,64 @@ function userWin(){
         }else{
             document.getElementById('result-text').innerText = 'DEFEAT';
         }}    
+
+function displayUserWeapon(weapon){
+    if (weapon === "rock") {
+        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-rock-o"></i>`
+    } else if (weapon === "paper") {
+        document.getElementById('user-display').innerHTML=`<i  class="fa fa-hand-paper-o" aria-hidden="true"></i>`
+    } else if (weapon === "scissor") {
+        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>`
+    } else if (weapon === "lizard") {
+        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-lizard-o" aria-hidden="true"></i> `
+    } else if (weapon === "spock") {
+        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`
+    } else {
+        alert('Unknown weapon1');
+}}
+
+function displayEnemyWeapon(weapon){
+    if (weapon === "rock") {
+        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-rock-o"></i>`
+    } else if (weapon === "paper") {
+        document.getElementById('enemy-display').innerHTML=`<i  class="fa fa-hand-paper-o" aria-hidden="true"></i>`
+    } else if (weapon === "scissor") {
+        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>`
+    } else if (weapon === "lizard") {
+        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-lizard-o" aria-hidden="true"></i> `
+    } else if (weapon === "spock") {
+        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`
+    } else {
+        alert('Unknown weapon2');
+}}
+
+
+function displayUserWeapon(weapon){
+    if (weapon === "rock") {
+        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-rock-o"></i>`
+    } else if (weapon === "paper") {
+        document.getElementById('user-display').innerHTML=`<i  class="fa fa-hand-paper-o" aria-hidden="true"></i>`
+    } else if (weapon === "scissor") {
+        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>`
+    } else if (weapon === "lizard") {
+        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-lizard-o" aria-hidden="true"></i> `
+    } else if (weapon === "spock") {
+        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`
+    } else {
+        alert('Unknown weapon1');
+}}
+
+function displayEnemyWeapon(weapon){
+    if (weapon === "rock") {
+        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-rock-o"></i>`
+    } else if (weapon === "paper") {
+        document.getElementById('enemy-display').innerHTML=`<i  class="fa fa-hand-paper-o" aria-hidden="true"></i>`
+    } else if (weapon === "scissor") {
+        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>`
+    } else if (weapon === "lizard") {
+        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-lizard-o" aria-hidden="true"></i> `
+    } else if (weapon === "spock") {
+        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`
+    } else {
+        alert('Unknown weapon2');
+}}
