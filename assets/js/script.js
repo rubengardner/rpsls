@@ -11,6 +11,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
 }})
 
+function runGame(weaponElection){
+    let enemyElection=enemyWeapon();  
+    battle(weaponElection, enemyElection);
+    displayUserWeapon(weaponElection);
+    displayEnemyWeapon(enemyElection);
+}
+
 
 function enemyWeapon(){
     weapons=['rock', 'paper', 'scissor', 'lizard', 'spock'];
@@ -175,33 +182,3 @@ function displayEnemyWeapon(weapon){
         alert('Unknown weapon2');
 }}
 
-
-function displayUserWeapon(weapon){
-    if (weapon === "rock") {
-        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-rock-o"></i>`
-    } else if (weapon === "paper") {
-        document.getElementById('user-display').innerHTML=`<i  class="fa fa-hand-paper-o" aria-hidden="true"></i>`
-    } else if (weapon === "scissor") {
-        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>`
-    } else if (weapon === "lizard") {
-        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-lizard-o" aria-hidden="true"></i> `
-    } else if (weapon === "spock") {
-        document.getElementById('user-display').innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`
-    } else {
-        alert('Unknown weapon1');
-}}
-
-function displayEnemyWeapon(weapon){
-    if (weapon === "rock") {
-        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-rock-o"></i>`
-    } else if (weapon === "paper") {
-        document.getElementById('enemy-display').innerHTML=`<i  class="fa fa-hand-paper-o" aria-hidden="true"></i>`
-    } else if (weapon === "scissor") {
-        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>`
-    } else if (weapon === "lizard") {
-        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-lizard-o" aria-hidden="true"></i> `
-    } else if (weapon === "spock") {
-        document.getElementById('enemy-display').innerHTML=`<i class="fa fa-hand-spock-o" aria-hidden="true"></i>`
-    } else {
-        alert('Unknown weapon2');
-}}
