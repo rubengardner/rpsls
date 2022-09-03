@@ -76,10 +76,20 @@ footer i{
   max-width: 650px;
   margin: auto ;
   overflow: hidden;
+  animation: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   border-radius: 15px;
-  box-shadow:rgba(240, 46, 170, 0.4) 0px 0px 0px 6px, rgba(240, 46, 170, 0.3) 0px 0px 0px 12px,rgba(240, 46, 170, 0.2) 0px 0px 0px 18px, rgba(240, 46, 170, 0.1) 0px 0px 0px 24px,  rgba(240, 46, 170, 0.05) 0px 0px 0px 30px;
-}
 
+}
+@keyframes example {
+  0%   {box-shadow:rgba(240, 46, 170, 0.4) 0px 0px 0px 6px, rgba(240, 46, 170, 0.3) 0px 0px 0px 12px,rgba(240, 46, 170, 0.2) 0px 0px 0px 18px, rgba(240, 46, 170, 0.1) 0px 0px 0px 24px,  rgba(240, 46, 170, 0.05) 0px 0px 0px 30px;}
+  25%  {box-shadow:rgba(240, 46, 170, 0.5) 0px 0px 0px 6px, rgba(240, 46, 170, 0.4) 0px 0px 0px 12px,rgba(240, 46, 170, 0.3) 0px 0px 0px 18px, rgba(240, 46, 170, 0.2) 0px 0px 0px 24px,  rgba(240, 46, 170, 0.1) 0px 0px 0px 30px;}
+  50%  {box-shadow:rgba(240, 46, 170, 0.6) 0px 0px 0px 6px, rgba(240, 46, 170, 0.5) 0px 0px 0px 12px,rgba(240, 46, 170, 0.4) 0px 0px 0px 18px, rgba(240, 46, 170, 0.3) 0px 0px 0px 24px,  rgba(240, 46, 170, 0.2) 0px 0px 0px 30px;}
+  75%  {box-shadow:rgba(240, 46, 170, 0.5) 0px 0px 0px 6px, rgba(240, 46, 170, 0.4) 0px 0px 0px 12px,rgba(240, 46, 170, 0.3) 0px 0px 0px 18px, rgba(240, 46, 170, 0.2) 0px 0px 0px 24px,  rgba(240, 46, 170, 0.1) 0px 0px 0px 30px;}
+  100% {box-shadow:rgba(240, 46, 170, 0.4) 0px 0px 0px 6px, rgba(240, 46, 170, 0.3) 0px 0px 0px 12px,rgba(240, 46, 170, 0.2) 0px 0px 0px 18px, rgba(240, 46, 170, 0.1) 0px 0px 0px 24px,  rgba(240, 46, 170, 0.05) 0px 0px 0px 30px;}
+  
+}
 
 /* Style the sections slides */
 #slides {
@@ -190,6 +200,24 @@ table{
   width:80%;
   left: 12%;
   top:350px;
+}
+
+/* Icons*/
+
+.display-weapons{
+  font-size: 200%;
+  color:#730041;
+  
+}
+
+#open-game-rules{
+  background-color: #730041;
+  
+}
+
+#open-game-rules strong{
+ color: #fff;
+  
 }
 
 

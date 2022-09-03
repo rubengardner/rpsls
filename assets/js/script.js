@@ -189,3 +189,27 @@ function openPopup() {
 function closePopup() {   
  document.getElementById("game-rules").style.visibility = "hidden";
 }
+
+
+function playAgain(){
+    let enemyHealth= document.getElementById("enemy-health")
+    let userHealth  = document.getElementById("user-health")
+    let weaponEnemy=  document.getElementById('enemy-display');
+    let weaponUser=  document.getElementById('user-display');
+
+    enemyHealth.value=50;
+    userHealth.value=50;
+    
+
+    document.getElementById('result').innerText = "Waiting for you're move";
+    document.getElementById('result-text').innerText = '...';
+
+    
+    weaponEnemy.style.color="#730041";
+    weaponUser.style.color="#730041";
+    weaponEnemy.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
+    weaponUser.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
+
+    document.getElementById("game-result").style.visibility = "hidden";
+
+}
