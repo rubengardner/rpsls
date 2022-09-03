@@ -182,3 +182,10 @@ function displayEnemyWeapon(weapon){
         alert('Unknown weapon2');
 }}
 
+function openPopup() {   
+    document.getElementById("game-rules").style.visibility = "visible";
+ }
+
+function closePopup() {   
+ document.getElementById("game-rules").style.visibility = "hidden";
+}
