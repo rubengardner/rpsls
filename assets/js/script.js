@@ -152,7 +152,7 @@ function userWin(){
         let victoryPopup= document.getElementById("game-result");
         let message= document.getElementById("result-message");
         victoryPopup.style.visibility='visible';
-        message.innerText="You won!";
+        message.innerText="Congrats, you won!";
 
         document.getElementById('result-message').classList.add('user-winner')
         document.getElementById('game-result').classList.add('neon-winner')
@@ -164,27 +164,27 @@ function userWin(){
    
     }}
 
-    function enemyWin(){
-        document.getElementById('enemy').classList.remove("animation-winner");
+function enemyWin(){
+    document.getElementById('enemy').classList.remove("animation-winner");
     document.getElementById('user-area').classList.remove("animation-winner");
-        let health = document.getElementById("user-health");
-        let logoUser=  document.getElementById('user-display');
-        let logoEnemy = document.getElementById('enemy-display');
-        health.value -= 10;
+    let health = document.getElementById("user-health");
+    let logoUser=  document.getElementById('user-display');
+    let logoEnemy = document.getElementById('enemy-display');
+    health.value -= 10;
 
     
-        if (health.value === 0){
-            let defeatPopup =  document.getElementById("game-result");
-            let message= document.getElementById("result-message");
-            defeatPopup.style.visibility='visible';
-            message.innerText="You lost!";
-        }else{
-            
-            document.getElementById('result-text').innerText = 'DEFEAT';
-            setTimeout(() => document.getElementById('enemy').classList.add("animation-winner"));
-            
-            
-        }}    
+    if (health.value === 0){
+        let defeatPopup =  document.getElementById("game-result");
+        let message= document.getElementById("result-message");
+        defeatPopup.style.visibility='visible';
+        message.innerText="Sorry, you lost!";
+
+        document.getElementById('result-message').classList.add('enemy-winner')
+        document.getElementById('game-result').classList.add('neon-looser')
+    }else{    
+        document.getElementById('result-text').innerText = 'DEFEAT';
+        setTimeout(() => document.getElementById('enemy').classList.add("animation-winner"));
+         }}    
 
 function displayUserWeapon(weapon){
     if (weapon === "rock") {
@@ -245,5 +245,7 @@ function playAgain(){
 
     document.getElementById('result-message').classList.remove('user-winner')
     document.getElementById('game-result').classList.remove('neon-winner')
+    document.getElementById('result-message').classList.remove('enemy-winner')
+    document.getElementById('game-result').classList.remove('neon-looser')
 
 }
