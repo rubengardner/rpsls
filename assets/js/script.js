@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByClassName('game-button');
+    
 
     for (let button of buttons){
         button.addEventListener("click", function(){
         let weaponClick = this.getAttribute('data-type'); 
-        
+       
         runGame(weaponClick);
     });
            
@@ -12,22 +13,40 @@ document.addEventListener("DOMContentLoaded", function(){
 }})
 
 function runGame(weaponElection){
-    let enemyElection=enemyWeapon();  
+    let enemyElection=enemyWeapon();
+    
+    
     battle(weaponElection, enemyElection);
     displayUserWeapon(weaponElection);
     displayEnemyWeapon(enemyElection);
+
+    
+    
 }
 
 
 function enemyWeapon(){
     weapons=['rock', 'paper', 'scissor', 'lizard', 'spock'];
     weaponChoice = weapons[Math.floor(Math.random()*weapons.length)];
+ 
     return weaponChoice;
+    
 }
+
+/*
+function manageWinnerAnimation() {
+    document.getElementById('user-area').classList.add("animation-winner")
+    setTimeout(() => document.getElementById('user-area').classList.remove("animation-winner"), 1000)
+}*/
+
 //Returns winner of between user and enemy
 function battle(weapon1, weapon2){
     
+    //Removes glowing animation from winner of the previous round
+    document.getElementById('enemy').classList.remove("animation-winner");
+    document.getElementById('user-area').classList.remove("animation-winner");
 
+    //Draw
     if(weapon1 === weapon2){
        document.getElementById('result').innerText="Play again!";
        document.getElementById('result-text').innerText='DRAW';
@@ -126,7 +145,7 @@ function battle(weapon1, weapon2){
 function userWin(){
     let health = document.getElementById("enemy-health")
     health.value -= 10;
-  
+    
     if (health.value === 0){
         let victoryPopup= document.getElementById("game-result");
         let message= document.getElementById("result-message");
@@ -134,7 +153,13 @@ function userWin(){
         message.innerText="You won!";
        
     }else{
+    
     document.getElementById('result-text').innerText = 'VICTORY';
+    document.getElementById('user-area').classList.add("animation-winner");
+   
+   
+    
+    
     }}
 
     function enemyWin(){
@@ -142,6 +167,7 @@ function userWin(){
         let logoUser=  document.getElementById('user-display');
         let logoEnemy = document.getElementById('enemy-display');
         health.value -= 10;
+
     
         if (health.value === 0){
             let defeatPopup =  document.getElementById("game-result");
@@ -149,7 +175,11 @@ function userWin(){
             defeatPopup.style.visibility='visible';
             message.innerText="You lost!";
         }else{
+            
             document.getElementById('result-text').innerText = 'DEFEAT';
+            document.getElementById('enemy').classList.add("animation-winner");
+            
+            
         }}    
 
 function displayUserWeapon(weapon){
@@ -204,9 +234,6 @@ function playAgain(){
     document.getElementById('result').innerText = "Waiting for you're move";
     document.getElementById('result-text').innerText = '...';
 
-    
-    weaponEnemy.style.color="#730041";
-    weaponUser.style.color="#730041";
     weaponEnemy.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
     weaponUser.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
 
