@@ -151,6 +151,8 @@ function userWin(){
         let message= document.getElementById("result-message");
         victoryPopup.style.visibility='visible';
         message.innerText="You won!";
+
+        document.getElementById('result-message').classList.add('user-winner')
        
     }else{
     
@@ -227,8 +229,8 @@ function playAgain(){
     let weaponEnemy=  document.getElementById('enemy-display');
     let weaponUser=  document.getElementById('user-display');
 
-    enemyHealth.value=50;
-    userHealth.value=50;
+    enemyHealth.value=10;
+    userHealth.value=10;
     
 
     document.getElementById('result').innerText = "Waiting for you're move";
@@ -238,5 +240,7 @@ function playAgain(){
     weaponUser.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
 
     document.getElementById("game-result").style.visibility = "hidden";
+
+    document.getElementById('result-message').classList.remove('user-winner')
 
 }
