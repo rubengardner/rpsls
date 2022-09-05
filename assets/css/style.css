@@ -313,7 +313,7 @@ progress[value]::-webkit-progress-value {
   width:50%;
   left:25%;
   text-align: center;
-  font-size: 24pt;
+  font-size: 40pt;
 }
 
 #close-game-result{
@@ -326,16 +326,21 @@ progress[value]::-webkit-progress-value {
 }
 
 .user-winner{
-animation: winner 2s ;;
-
+animation: winner 2s ;
 }
 
+.neon-winner{
+  animation: neon-winner 2s ;
+}
 @keyframes winner {
-  0%   {font-size: 20pt;}
+  0%   {font-size: 0pt;}
   50%  {font-size: 60pt;}
   100% {transform:rotate(360deg);}
 }
 
+@keyframes neon-winner {
+20%{background-color: #fff;}
+}
 
 /*Feedback section*/
 #feedback-section{

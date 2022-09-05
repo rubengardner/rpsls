@@ -153,6 +153,7 @@ function userWin(){
         message.innerText="You won!";
 
         document.getElementById('result-message').classList.add('user-winner')
+        document.getElementById('game-result').classList.add('neon-winner')
        
     }else{
     
@@ -242,5 +243,6 @@ function playAgain(){
     document.getElementById("game-result").style.visibility = "hidden";
 
     document.getElementById('result-message').classList.remove('user-winner')
+    document.getElementById('game-result').classList.remove('neon-winner')
 
 }
