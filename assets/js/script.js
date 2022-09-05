@@ -143,6 +143,8 @@ function battle(weapon1, weapon2){
 }
 
 function userWin(){
+    document.getElementById('enemy').classList.remove("animation-winner");
+    document.getElementById('user-area').classList.remove("animation-winner");
     let health = document.getElementById("enemy-health")
     health.value -= 10;
     
@@ -158,14 +160,13 @@ function userWin(){
     }else{
     
     document.getElementById('result-text').innerText = 'VICTORY';
-    document.getElementById('user-area').classList.add("animation-winner");
+    setTimeout(() => document.getElementById('user-area').classList.add("animation-winner"));
    
-   
-    
-    
     }}
 
     function enemyWin(){
+        document.getElementById('enemy').classList.remove("animation-winner");
+    document.getElementById('user-area').classList.remove("animation-winner");
         let health = document.getElementById("user-health");
         let logoUser=  document.getElementById('user-display');
         let logoEnemy = document.getElementById('enemy-display');
@@ -180,7 +181,7 @@ function userWin(){
         }else{
             
             document.getElementById('result-text').innerText = 'DEFEAT';
-            document.getElementById('enemy').classList.add("animation-winner");
+            setTimeout(() => document.getElementById('enemy').classList.add("animation-winner"));
             
             
         }}    
