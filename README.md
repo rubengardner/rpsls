@@ -16,30 +16,62 @@ Visit the deployed website [here](https:).
     3. [Typography](#typography)
     4. [Wireframes](#wireframes)
 2. [Features](#features)
-    1. [General](#general)
-    2. [Home Section](#home-section)
-    3. [Instructions Section](#instructions-section)
-    4. [Game section](#game-section)
-    5. [Result Section](#result-section)
-    6. [404 Error Page](#404-error-page)
 3. [Technologies Used](#technologies-used)
-    1. [Languages Used](#languages-used)
-    2. [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 4. [Testing](#testing)
-    1. [Testing User Stories](#testing-user-stories)
-    2. [Code Validation](#code-validation)
-    3. [Accessibility](#accessibility)
-    4. [Tools Testing](#tools-testing)
-    5. [Manual Testing](#manual-testing)
-5. [Finished Product](#finished-product)
-6. [Deployment](#deployment)
+5. [Deployment](#deployment)
     1. [GitHub Pages](#github-pages)
-7. [Credits](#credits)
+6. [Credits](#credits)
     1. [Content](#content)
     2. [Media](#media)
     3. [Code](#code)
-8. [Acknowledgements](#acknowledgements)
+
 
 ***
 
-#
+
+## User Experience (UX)
+
+### Project Goals
+
+* The website provides a structure that is easy to understand, navigate and to interact with.
+
+* Contains fun colors, interactivity and animations to engage the player in the game .
+
+* Responsive design to make the site accessible on different devices.
+
+* Incorporates a rules section that is easily accessible and understandable to the player.
+
+* A feedback section is provided to get comments from the player in order to further develop the website.
+
+### Color Scheme
+
+![Color scheme image](assets/readme-files/color-scheme.png)
+
+Colors used
+* Back-ground: linear gradient from blue (#4158D0) to  pink (#FFCC70) passing by yellow (#C850C0) in the middle. 
+
+* Carrousel slides: A pink (rgba(240, 46, 170, 0.2) on top of a white background (#ffffff), giving a resulting color of pink (#f9abdd)
+
+* Boxes displaying the game or text: Using a white shadow (rgba(255, 255, 255, 0.5)) on top of the Carrousel slide (#f9abdd), resulting in a color of pink #fcd5ee.
+
+* Retro-style buttons and links: white (#ffffff) and black (#000000)
+
+* Table displaying the game mechanincs: Green (#0FA300) for the user and purple (#730041) for the enemy.
+
+* Wepons selection and help pop-up button: Purple (#730041);
+
+* Pop up backgrounds: Grey (rgba(85, 85, 85, 1))
+
+
+### Typography
+
+The font used in the site is Teko, with Sans Serif as the fallback font in case Teko is not being imported correctly.
+
+### Wireframes
+
+[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
+
+Here we can see an example of the game section wireframe:
+![Game section wireframe image](assets/media/game-section-wireframe.png)
+
+[Back to top ⇧](#rpsls)
