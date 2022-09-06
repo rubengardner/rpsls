@@ -14,14 +14,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function runGame(weaponElection){
     let enemyElection=enemyWeapon();
-    
-    
+      
     battle(weaponElection, enemyElection);
     displayUserWeapon(weaponElection);
-    displayEnemyWeapon(enemyElection);
-
-    
-    
+    displayEnemyWeapon(enemyElection);   
 }
 
 
@@ -33,18 +29,12 @@ function enemyWeapon(){
     
 }
 
-/*
-function manageWinnerAnimation() {
-    document.getElementById('user-area').classList.add("animation-winner")
-    setTimeout(() => document.getElementById('user-area').classList.remove("animation-winner"), 1000)
-}*/
 
 //Returns winner of between user and enemy
 function battle(weapon1, weapon2){
-    
-    //Removes glowing animation from winner of the previous round
-    document.getElementById('enemy').classList.remove("animation-winner");
-    document.getElementById('user-area').classList.remove("animation-winner");
+    //Eliminates classes that added round-winner animations
+    document.getElementById('enemy').classList.remove("animation-looser");
+    document.getElementById('user-area').classList.remove("animation-looser");
 
     //Draw
     if(weapon1 === weapon2){
@@ -142,22 +132,23 @@ function battle(weapon1, weapon2){
     }
 }
 
+//Determines if the user won the round or the battle
 function userWin(){
-    document.getElementById('enemy').classList.remove("animation-looser");
-    document.getElementById('user-area').classList.remove("animation-looser");
-
+    //Calls function that reduces health
     let health = document.getElementById("enemy-health")
-    health.value -= 10;
+    looseHealth(health);
     
-    if (health.value === 0){
+    //Display final round pop-up: user won.
+    if (health.value === 10){
         let victoryPopup= document.getElementById("game-result");
         let message= document.getElementById("result-message");
+        
+        victoryPopup.classList.add('visibility-transition')
         victoryPopup.style.visibility='visible';
-        message.innerText="Congrats, you won!";
-
-        document.getElementById('result-message').classList.add('user-winner')
-        document.getElementById('game-result').classList.add('neon-winner')
-       
+        message.innerText="You won!";
+        document.getElementById('result-message').classList.add('user-winner');
+        
+     //Code runs if there is a round-victory for the user
     }else{
     
     document.getElementById('result-text').innerText = 'VICTORY';
@@ -166,27 +157,24 @@ function userWin(){
     
    
     }}
-
+//Determines if the enemy won the round or the battle
 function enemyWin(){
-    document.getElementById('enemy').classList.remove("animation-looser");
-    document.getElementById('user-area').classList.remove("animation-looser");
-
- 
-
+    //Calls function that reduces health
     let health = document.getElementById("user-health");
-    let logoUser=  document.getElementById('user-display');
-    let logoEnemy = document.getElementById('enemy-display');
-    health.value -= 10;
+    looseHealth(health);
 
-    
-    if (health.value === 0){
+    //Display final round pop-up: user won.
+    if (health.value === 10){
         let defeatPopup =  document.getElementById("game-result");
         let message= document.getElementById("result-message");
+       
+        
         defeatPopup.style.visibility='visible';
+        defeatPopup.classList.add('visibility-transition');
         message.innerText="Sorry, you lost!";
-
-        document.getElementById('result-message').classList.add('enemy-winner')
-        document.getElementById('game-result').classList.add('neon-looser')
+        document.getElementById('result-message').classList.add('enemy-winner');
+        
+      //Code runs if there is a round-victory for the user   
     }else{    
         document.getElementById('result-text').innerText = 'DEFEAT';
         setTimeout(() => document.getElementById('user-area').classList.add("animation-looser"))
@@ -232,26 +220,29 @@ function closePopup() {
 
 
 function playAgain(){
-    let enemyHealth= document.getElementById("enemy-health")
-    let userHealth  = document.getElementById("user-health")
+    //Resets health bars
+    document.getElementById("enemy-health").value =50;
+    document.getElementById("user-health").value=50;
+
+    //Resets initial 'i' tag for weapon selection and initial message
     let weaponEnemy=  document.getElementById('enemy-display');
     let weaponUser=  document.getElementById('user-display');
-
-    enemyHealth.value=10;
-    userHealth.value=10;
-    
-
+    weaponEnemy.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
+    weaponUser.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
     document.getElementById('result').innerText = "Waiting for you're move";
     document.getElementById('result-text').innerText = '...';
 
-    weaponEnemy.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
-    weaponUser.innerHTML=`<i class="fa fa-ellipsis-h" aria-hidden="true"></i>`;
-
+    //Resets final round pop up 
     document.getElementById("game-result").style.visibility = "hidden";
-
-    document.getElementById('result-message').classList.remove('user-winner')
-    document.getElementById('game-result').classList.remove('neon-winner')
-    document.getElementById('result-message').classList.remove('enemy-winner')
-    document.getElementById('game-result').classList.remove('neon-looser')
+    document.getElementById('result-message').classList.remove('user-winner');
+    document.getElementById('result-message').classList.remove('enemy-winner');
+    document.getElementById("game-result").classList.remove('visibility-transition')
 
 }
+//Code from: https://stackoverflow.com/questions/2956966/javascript-telling-setinterval-to-only-fire-x-amount-of-times
+function looseHealth(healthBarId){   
+    let x = 0;
+    let intervalID = setInterval(function (){healthBarId.value  -= 1; if (++x === 10) {
+            window.clearInterval(intervalID);}}, 80);
+}
+

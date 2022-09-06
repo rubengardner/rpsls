@@ -307,7 +307,7 @@ progress[value]::-webkit-progress-value {
   left:5%;
   z-index: 1;
   border-radius: 15px;
-  background-color: #555;
+  background-color: rgba(85, 85, 85, 1);
   color: #fff;
   text-align: center;
   height: 90%;
@@ -336,34 +336,19 @@ progress[value]::-webkit-progress-value {
 animation: winner 2s;
 }
 
-.neon-winner{
-  animation: neon-winner 2s ;
-}
-
 .enemy-winner{
-  animation: looser 1.5s ;
+  animation: looser 2s ;
 }
 
-.neon-looser{
-  animation: neon-looser 2s ;
-}
 @keyframes winner {
   0%   {font-size: 0pt;}
+  20%  {background-color: #fff;}
   50%  {font-size: 60pt;}
-  100% {transform:rotate(360deg);}
 }
-
-@keyframes neon-winner {
-20%{background-color: #fff;}
-}
-
-@keyframes neon-looser {
-  20%{background-color: red;}
-  }
 
 @keyframes looser {
   10%{transform: translateX(100px);}
-  20%{transform: translateX(-100px);}
+  20%{transform: translateX(-100px); color: red;}
   30%{transform: translateX(50px);}
   40%{transform: translateX(-50px);}
   50%{transform: translateX(25px);}
@@ -377,6 +362,15 @@ animation: winner 2s;
   100%{transform: translateX(0px);}
   }
 
+  .visibility-transition{
+    animation: visibility-popup ;
+    animation-duration: 2s;
+  }
+
+  @keyframes visibility-popup {
+    0%{background-color: rgba(85, 85, 85, 0);}
+    100%{background-color:rgba(85, 85, 85, 1);}
+  }
 /*Feedback section*/
 #feedback-section{
   font-size: 14pt;
