@@ -186,8 +186,11 @@ table{
   width: 50%;
   position: absolute;
   left: 26%;
-  
   top:160px;
+}
+
+#result-text{
+  font-size: 20pt;
 }
 
 #user-area{
@@ -202,24 +205,28 @@ table{
   
 }
 
-.animation-winner{
-  animation:shadow-winner;
+.animation-looser{
+  animation:vibration;
   animation-duration: 1s;
+  
   /*animation-iteration-count: infinite;*/
 }
 
-@keyframes shadow-winner {
-  
-  0%   {box-shadow:rgba(255, 255, 255, 0.2) 0px 0px 0px 6px, rgba(255, 255, 255, 0.1) 0px 0px 0px 12px,rgba(255, 255, 255, 0.05) 0px 0px 0px 18px;}
-  12.5%   {box-shadow:rgba(255, 255, 255, 0.3) 0px 0px 0px 6px, rgba(255, 255, 255, 0.2) 0px 0px 0px 12px,rgba(255, 255, 255, 0.1) 0px 0px 0px 18px, rgba(255, 255, 255, 0.05) 0px 0px 0px 24px;}
-  25%   {box-shadow:rgba(255, 255, 255, 0.4) 0px 0px 0px 6px, rgba(255, 255, 255, 0.3) 0px 0px 0px 12px,rgba(255, 255, 255, 0.2) 0px 0px 0px 18px, rgba(255, 255, 255, 0.1) 0px 0px 0px 24px,  rgba(255, 255, 255, 0.05) 0px 0px 0px 30px;}
-  37.5%  {box-shadow:rgba(255, 255, 255, 0.5) 0px 0px 0px 6px, rgba(255, 255, 255, 0.4) 0px 0px 0px 12px,rgba(255, 255, 255, 0.3) 0px 0px 0px 18px, rgba(255, 255, 255, 0.2) 0px 0px 0px 24px,  rgba(255, 255, 255, 0.1) 0px 0px 0px 30px;}
-  50%  {box-shadow:rgba(255, 255, 255, 0.6) 0px 0px 0px 6px, rgba(255, 255, 255, 0.5) 0px 0px 0px 12px,rgba(255, 255, 255, 0.4) 0px 0px 0px 18px, rgba(255, 255, 255, 0.3) 0px 0px 0px 24px,  rgba(255, 255, 255, 0.2) 0px 0px 0px 30px;}
-  62.5%  {box-shadow:rgba(255, 255, 255, 0.5) 0px 0px 0px 6px, rgba(255, 255, 255, 0.4) 0px 0px 0px 12px,rgba(255, 255, 255, 0.3) 0px 0px 0px 18px, rgba(255, 255, 255, 0.2) 0px 0px 0px 24px,  rgba(255, 255, 255, 0.1) 0px 0px 0px 30px;}
-  75% {box-shadow:rgba(255, 255, 255, 0.4) 0px 0px 0px 6px, rgba(255, 255, 255, 0.3) 0px 0px 0px 12px,rgba(255, 255, 255, 0.2) 0px 0px 0px 18px, rgba(255, 255, 255, 0.1) 0px 0px 0px 24px,  rgba(255, 255, 255, 0.05) 0px 0px 0px 30px;}
-  87.5% {box-shadow:rgba(255, 255, 255, 0.3) 0px 0px 0px 6px, rgba(255, 255, 255, 0.2) 0px 0px 0px 12px,rgba(255, 255, 255, 0.1) 0px 0px 0px 18px, rgba(255, 255, 255, 0.05) 0px 0px 0px 24px;}
-  100%   {box-shadow:rgba(255, 255, 255, 0.2) 0px 0px 0px 6px, rgba(255, 255, 255, 0.1) 0px 0px 0px 12px,rgba(255, 255, 255, 0.05) 0px 0px 0px 18px;}
-}
+@keyframes vibration {
+  10%{transform: translateX(2px); box-shadow:rgba(110,4,26, 0.2) 0px 0px 0px 6px, rgba(110,4,26, 0.1) 0px 0px 0px 12px,rgba(110,4,26, 0.05) 0px 0px 0px 18px;}
+  20%{transform: translateX(-2px); box-shadow:rgba(110,4,26, 0.3) 0px 0px 0px 6px, rgba(110,4,26, 0.2) 0px 0px 0px 12px,rgba(110,4,26, 0.1) 0px 0px 0px 18px, rgba(110,4,26, 0.05) 0px 0px 0px 24px;}
+  30%{transform: translateX(2px); box-shadow:rgba(110,4,26, 0.4) 0px 0px 0px 6px, rgba(110,4,26, 0.3) 0px 0px 0px 12px,rgba(110,4,26, 0.2) 0px 0px 0px 18px, rgba(110,4,26, 0.1) 0px 0px 0px 24px,  rgba(110,4,26, 0.05) 0px 0px 0px 30px;}
+  40%{transform: translateX(-2px); box-shadow:rgba(110,4,26, 0.5) 0px 0px 0px 6px, rgba(110,4,26, 0.4) 0px 0px 0px 12px,rgba(110,4,26, 0.3) 0px 0px 0px 18px, rgba(110,4,26, 0.2) 0px 0px 0px 24px,  rgba(110,4,26, 0.1) 0px 0px 0px 30px;}
+  50%{transform: translateX(2px); box-shadow:rgba(110,4,26, 0.6) 0px 0px 0px 6px, rgba(110,4,26, 0.5) 0px 0px 0px 12px,rgba(110,4,26, 0.4) 0px 0px 0px 18px, rgba(110,4,26, 0.3) 0px 0px 0px 24px,  rgba(110,4,26, 0.2) 0px 0px 0px 30px;}
+  60%{transform: translateX(-2px);box-shadow:rgba(110,4,26, 0.5) 0px 0px 0px 6px, rgba(110,4,26, 0.4) 0px 0px 0px 12px,rgba(110,4,26, 0.3) 0px 0px 0px 18px, rgba(110,4,26, 0.2) 0px 0px 0px 24px,  rgba(110,4,26, 0.1) 0px 0px 0px 30px;}
+  70%{transform: translateX(2px);box-shadow:rgba(110,4,26, 0.4) 0px 0px 0px 6px, rgba(110,4,26, 0.3) 0px 0px 0px 12px,rgba(110,4,26, 0.2) 0px 0px 0px 18px, rgba(110,4,26, 0.1) 0px 0px 0px 24px,  rgba(110,4,26, 0.05) 0px 0px 0px 30px;}
+  75%{transform: translateX(-2px);box-shadow:rgba(110,4,26, 0.3) 0px 0px 0px 6px, rgba(110,4,26, 0.2) 0px 0px 0px 12px,rgba(110,4,26, 0.1) 0px 0px 0px 18px, rgba(110,4,26, 0.05) 0px 0px 0px 24px;}
+  80%{transform: translateX(2px);}
+  85%{transform: translateX(-2px);}
+  90%{transform: translateX(2px);}
+  95%{transform: translateX(-2px);}
+  100%{transform: translateX(0px);box-shadow:rgba(110,4,26, 0.2) 0px 0px 0px 6px, rgba(110,4,26, 0.1) 0px 0px 0px 12px,rgba(110,4,26, 0.05) 0px 0px 0px 18px;}
+  }
 
 #weapon-area{
   position: absolute;
@@ -368,7 +375,6 @@ animation: winner 2s;
   90%{transform: translateX(3px);}
   95%{transform: translateX(-3px);}
   100%{transform: translateX(0px);}
- 
   }
 
 /*Feedback section*/

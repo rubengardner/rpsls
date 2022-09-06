@@ -143,8 +143,9 @@ function battle(weapon1, weapon2){
 }
 
 function userWin(){
-    document.getElementById('enemy').classList.remove("animation-winner");
-    document.getElementById('user-area').classList.remove("animation-winner");
+    document.getElementById('enemy').classList.remove("animation-looser");
+    document.getElementById('user-area').classList.remove("animation-looser");
+
     let health = document.getElementById("enemy-health")
     health.value -= 10;
     
@@ -160,13 +161,18 @@ function userWin(){
     }else{
     
     document.getElementById('result-text').innerText = 'VICTORY';
-    setTimeout(() => document.getElementById('user-area').classList.add("animation-winner"));
+    setTimeout(() => document.getElementById('enemy').classList.add("animation-looser"))
+    
+    
    
     }}
 
 function enemyWin(){
-    document.getElementById('enemy').classList.remove("animation-winner");
-    document.getElementById('user-area').classList.remove("animation-winner");
+    document.getElementById('enemy').classList.remove("animation-looser");
+    document.getElementById('user-area').classList.remove("animation-looser");
+
+ 
+
     let health = document.getElementById("user-health");
     let logoUser=  document.getElementById('user-display');
     let logoEnemy = document.getElementById('enemy-display');
@@ -183,7 +189,7 @@ function enemyWin(){
         document.getElementById('game-result').classList.add('neon-looser')
     }else{    
         document.getElementById('result-text').innerText = 'DEFEAT';
-        setTimeout(() => document.getElementById('enemy').classList.add("animation-winner"));
+        setTimeout(() => document.getElementById('user-area').classList.add("animation-looser"))
          }}    
 
 function displayUserWeapon(weapon){
