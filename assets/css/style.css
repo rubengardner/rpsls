@@ -44,13 +44,13 @@ body {
 
 header {
   text-align: center;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
 }
   
 header li{
   display:inline-block;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px 10px 7px 10px;
 }
 
 /*Footer*/
@@ -72,7 +72,7 @@ footer i{
 /*Container carrousel*/
 #container{
   background-color: white;
-  height: 500px;
+  height: 490px;
   width: 95vw;
   max-width: 650px;
   margin: auto ;
@@ -112,7 +112,7 @@ footer i{
     flex-shrink: 0;
     width: 95vw;
     max-width: 650px;
-    height: 500px;
+    height: 490px;
     border-radius: 10px;
     background-color: rgba(240, 46, 170, 0.4);
   }
@@ -179,7 +179,7 @@ table{
   position: absolute;
   left: 15%;
   padding: 5px;
-  bottom:60px;
+  bottom:30px;
   font-size: 14pt;
   background-color: rgba(255, 255, 255, 0.5);
   border:#000 solid 2px;
@@ -217,7 +217,7 @@ table{
   width: 50%;
   position: absolute;
   left: 26%;
-  top:160px;
+  top:155px;
 }
 
 #result-text{
@@ -239,8 +239,6 @@ table{
 .animation-looser{
   animation:vibration;
   animation-duration: 1s;
-  
-  /*animation-iteration-count: infinite;*/
 }
 
 @keyframes vibration {
@@ -419,4 +417,74 @@ animation: winner 2s;
 label{
   padding: 10px 0 10px 0;
   font-size: 17pt;
+}
+
+/*Media queries*/
+@media screen and (max-width: 600px) {
+  
+.navigtion {
+  font-size:12pt;
+  margin: 5px 5px 5px 0;
+  padding: 2px;
+}
+
+
+header, header li{
+  padding: 0 2px 5px 2px;
+}
+
+#instructions-section p, table, .game-button, #open-game-rules{
+  font-size: 12pt;
+}
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+/*Header*/
+h1{
+  font-size: 18pt;
+}
+
+#home-section > h2{
+  font-size: 40pt;
+}
+
+/*Instructions area*/
+#instructions-section p, table{
+  width:90%;
+  left:5%;
+}
+/*Game section*/
+#enemy,#user-area{
+  width: 70%;
+  left: 15%;
+}
+
+#user-area{
+  top:210px;
+}
+
+#weapon-area{
+  width:100%;
+  left:2%;
+  top:320px;
+}
+#result-text{
+  font-size: 15pt;
+}
+.display-weapons, #open-game-rule{
+  font-size: 15pt;
+}
+
+#result-area{
+  width: 80%;
+  left: 10%;
+  top: 140px;
+}
+
+
+
+
 }
