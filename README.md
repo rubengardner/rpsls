@@ -96,3 +96,7 @@ Here we can see an example of the game section wireframe:
 ![Game section wireframe image](assets/media/game-section-wireframe.png)
 
 [Back to top ⇧](#rpsls)
+
+## Features
+
+###Header
