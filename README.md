@@ -224,5 +224,52 @@ Css style sheet validation screenshot:
 
 [JSHints JavaScript Code Quality Tool](https://jigsaw.w3.org/css-validator/) was used to check for any error within the CSS stylesheet. As seen in the sreencshot, multiple errors were found, subsequently fixed
 
-Css style sheet validation screenshot:
-  ![javaScript validation ](./assets/media/javascript_errors.png)
+JavaScript style sheet validation screenshot:
+  ![JavaScript validation ](./assets/media/javascript_errors.png)
+
+## Manual testing
+
+### Main
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Home button | on click "home", the browser redirects me to the introduction section .| PASS
+Instructions button|  on click "Instructions", the browser redirects me to the instructions section. | PASS
+Let's play button|  on click "let's play", the browser redirects me to the game section. | PASS
+Feedback button|  on click "booking", the browser redirects me to the feedback section. | PASS
+Responsive | All elements were responsive (mobile and website) using differnt breakpoints.| PASS
+Foreground & background  color| Checked foreground information is not distracted by backgrounds| PASS
+Text|Checked if all fonts and colors used are consistent or not|PASS
+Accessibility | Checked the accessibility of the page using lighthouse| PASS
+Media| All images and videos on the pages load and played. The video added was not auto play. All images were checked if it blurred in differnt screen sizes| PASS
+
+
+### Footer
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Facebook | on clicking Facebook icon, a new tab opens and redirects to the Facebook website.| PASS
+Twitter | on clicking Linkedin icon, a new tab opens and redirects to the Twitter website.  | PASS
+Instagram | on clicking instagram icon, a new tab opens and redirects to the instagram website.  | PASS
+
+
+### Game section
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Game buttons| All weapon buttons on clicked select the correct weapon and initiate correctly the game mechanics| PASS
+Animations | Animations display correctly on the user and on the enemy when they loose the round.| PASS
+Health bar | Loose health in time steps when user or enemy loose the round| PASS
+Rapid fire | Rapid fire of the game mechanics is not permitted| PASS
+Result pop-up| When one of the players ends without health, a pop-up showing the result appears| PASS
+Help pop-up | On clicking the '?' sign, a pop-up appears| PASS
+Closing pop-ups | All pop-ups have closing buttons thst work| PASS
+
+### Feedback section
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Submit| Checked if submit button works and opens on another tab |PASS
+
+## 5 Bugs
+
+* A rapid fire bug was encountered:
+The control loop that checked if the player had lost would not be called if the user did "Rapid fire" and clicked the games faster than the time the health bar took to 
+
