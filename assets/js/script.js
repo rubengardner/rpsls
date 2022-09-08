@@ -143,7 +143,7 @@ function userWin(){
     looseHealth(health);
     
     //Display final round pop-up: user won.
-    if (health.value === 10){
+    if (health.value <= 10){
         let victoryPopup= document.getElementById("game-result");
         let message= document.getElementById("result-message");
         
@@ -168,7 +168,7 @@ function enemyWin(){
     looseHealth(health);
 
     //Display final round pop-up: user won.
-    if (health.value === 10){
+    if (health.value <= 10){
         let defeatPopup =  document.getElementById("game-result");
         let message= document.getElementById("result-message");
        

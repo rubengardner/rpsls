@@ -201,3 +201,28 @@ Form submission screenshot:
 * [Github](https://github.com/) was used to create the repository.
 * [W3C Markup](https://validator.w3.org/) and [Jigsaw validation](https://jigsaw.w3.org/) tools were used to validate the HTML code and CSS code.
 * [Ami](http://ami.responsivedesign.is/#) was used to develop a Mockup screenshot generator
+
+  
+## 4. Testing
+  
+### 4.1 Testing using tools
+
+* Google Developer Tools: Google developer tools (Chrome DevTools) was used as debugging tool. The code was inspected modified here, before changing the source code.
+
+* [Am I Responsive](http://ami.responsivedesign.is/):site was used to check the responsiveness of the web page
+
+* [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) was used to check for any errors within the HTML pages. Two errors where found that were subsequently fixed.
+
+Index page html validation screenshot:
+  ![Html validation 1](./assets/media/html_errors.png)
+
+
+[W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to check for any error within the CSS stylesheet. No errors were found.
+
+Css style sheet validation screenshot:
+  ![Css validation ](./assets/media/css_errors.png)
+
+[JSHints JavaScript Code Quality Tool](https://jigsaw.w3.org/css-validator/) was used to check for any error within the CSS stylesheet. As seen in the sreencshot, multiple errors were found, subsequently fixed
+
+Css style sheet validation screenshot:
+  ![javaScript validation ](./assets/media/javascript_errors.png)

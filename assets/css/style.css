@@ -414,6 +414,13 @@ animation: winner 2s;
   width:50%;
 }
 
+#feedback-section h3{
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  top: 300px;
+}
+
 label{
   padding: 10px 0 10px 0;
   font-size: 17pt;
