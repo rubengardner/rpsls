@@ -1,23 +1,27 @@
-document.addEventListener("DOMContentLoaded", function(){
+let clicked;
+
+document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByClassName('game-button');
     
-
-    for (let button of buttons){
-        button.addEventListener("click", function(){
-        let weaponClick = this.getAttribute('data-type'); 
-       
-        runGame(weaponClick);
-    });
-           
-
-}})
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (clicked) return;
+            clicked = true;
+            let weaponClick = this.getAttribute('data-type'); 
+            runGame(weaponClick);
+        });           
+    }
+});
 
 function runGame(weaponElection){
     let enemyElection=enemyWeapon();
       
     battle(weaponElection, enemyElection);
     displayUserWeapon(weaponElection);
-    displayEnemyWeapon(enemyElection);   
+    displayEnemyWeapon(enemyElection);
+    setTimeout(function() {
+        clicked = false;
+    }, 1000);
 }
 
 

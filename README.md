@@ -46,7 +46,7 @@ Visit the deployed website [here](https:).
 
 ### Color Scheme:
 
-![Color scheme image](assets/readme-files/color-scheme.png)
+
 
 Colors used:
 * Back-ground: linear gradient from blue (#4158D0) to  pink (#FFCC70) passing by yellow (#C850C0) in the middle. 
@@ -72,16 +72,16 @@ We used the following technologies to choose the color scheme:
 We used [WebAIM](https://webaim.org/resources/contrastchecker/) to check accesability, as shown below.
 
 Contrast between black text and light pink boxes:
-  ![Contrast-check1](./assets/media/contrast-check1.png)
+  ![Contrast-check1](./assets/media/contrast_check1.png)
 
 Contrast between purple weapon selection and and pink background:
-  ![Contrast-check2](./assets/media/contrast-check2.png)
+  ![Contrast-check2](./assets/media/contrast_check2.png)
 
 Contrast between pop-up text and background:
-  ![Contrast-check3](./assets/media/contrast-check3.png) 
+  ![Contrast-check3](./assets/media/contrast_check3.png) 
 
 Contrast between black welcome text and pink background:
-  ![Contrast-check4](./assets/media/contrast-check4.png)  
+  ![Contrast-check4](./assets/media/contrast_check4.png)  
 
 
 ### Typography:
@@ -93,10 +93,111 @@ The font used in the site is Teko, with Sans Serif as the fallback font in case 
 [Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
 
 Here we can see an example of the game section wireframe:
-![Game section wireframe image](assets/media/game-section-wireframe.png)
+![Game section wireframe image](assets/media/game_section_wireframe.png)
 
 [Back to top ⇧](#rpsls)
 
 ## Features
 
-###Header
+### Header
+* A navigation bar is placed at the center of the header. Each button has an active effect that gives the sensation of an 3D button being pushed when clicked.
+* Each button directs you to the corresponding section
+
+Header screenshot normal:
+
+  ![Header page preview 1](./assets/media/header.png)
+
+Header screenshot active:
+
+  ![Header page preview 2](./assets/media/header_active.png)
+
+### Footer
+
+* Social media links (for facebook, instagram and Twitter) are placed at the bottom of the page. All the links will open in a new tab. 
+Footer screenshot:
+
+ ![Footer page preview](./assets/media/footer.png)
+
+### Main section
+
+
+
+
+### Instructions section
+
+* A section that introduces the game to the user, presenting the different weapons available (rock, paper, scissor, lizzard, spock) for the battle and number of rounds. 
+
+* Shows a table with all the possible battle outcomes.
+
+Instruction section screenshot:
+
+![Instructions page preview](./assets/media/instructions_section.png)
+
+### Game section
+
+* Contains two marked areas that represent the weapon selection and health status of the user and the enemy.
+
+* A central and neutral territory that explains the outcome of each round
+
+* Five buttons permitting the user choose between the 5 weapons available 
+
+* A buttons with an "?" which displays a pop-up with an image showing who beats who.
+
+Game section screenshot:
+
+![Game page preview](./assets/media/game_section.png)
+
+### Help pop-up
+
+* Contains image displaying advantages and disadvantages of each wepon.
+
+* "Close" button making the pop-up dissapear.
+
+Help pop-up screenshot:
+
+![Help pop-up preview](./assets/media/help_popup.png)
+
+### Winning or loosing pop-up
+
+* A pop-up displays the result of the battle once the user or the enemy have no more health
+
+* The style of both pop-up is the same, with the animations being different
+
+Result pop-up screenshots:
+
+![Winning pop-up preview](./assets/media/win_popup.png)
+
+![Loosing pop-up preview](./assets/media/loose_popup.png)
+
+
+### Feedback section
+
+* Contains a form permitting the users to suggest further developments
+
+* Incorporates a simple radio input which permits user to rate their expirience from 1 to 5.
+
+* To submit the form, all fields are requiered.
+
+* When submitted, the submision form opens on a new tab
+
+Feedback section screenshot:
+
+![Feedback section preview](./assets/media/feedback_section.png)
+
+Form submission screenshot:
+
+![Form sbmission preview](./assets/media/form_submission.png)
+
+# 3. Technologies used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for structuring and presenting content of the website.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) was used to provide the style to the content written in a HTML.
+* [javaScript](https://en.wikipedia.org/wiki/JavaScript) was used to provide the logic of the game and help with animations.
+* [Balsamiq](https://balsamiq.com/) was used to create wireframes of the website (desktop and mobile version).
+* [Google Fonts](https://fonts.google.com/) was used to import font-family "Lato" and "Oswald" into style,css file and which was used throughout the pages of the website.
+* [Font Awesome](https://fontawesome.com/) was used to improt icons to the sites.
+* [Chrome](https://www.google.com/intl/en_uk/chrome/) was used to debug and test the source code.
+* [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site
+* [Github](https://github.com/) was used to create the repository.
+* [W3C Markup](https://validator.w3.org/) and [Jigsaw validation](https://jigsaw.w3.org/) tools were used to validate the HTML code and CSS code.
+* [Ami](http://ami.responsivedesign.is/#) was used to develop a Mockup screenshot generator
