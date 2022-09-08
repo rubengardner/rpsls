@@ -120,8 +120,9 @@ Footer screenshot:
 
 ### Main section
 
+* A section that welcomes the user and directs him to the game area.
 
-
+![Home section preview](./assets/media/main_section.png)
 
 ### Instructions section
 
@@ -131,7 +132,7 @@ Footer screenshot:
 
 Instruction section screenshot:
 
-![Instructions page preview](./assets/media/instructions_section.png)
+![Instructions section preview](./assets/media/instructions_section.png)
 
 ### Game section
 
@@ -145,7 +146,7 @@ Instruction section screenshot:
 
 Game section screenshot:
 
-![Game page preview](./assets/media/game_section.png)
+![Game section preview](./assets/media/game_section.png)
 
 ### Help pop-up
 
@@ -271,5 +272,35 @@ Submit| Checked if submit button works and opens on another tab |PASS
 ## 5 Bugs
 
 * A rapid fire bug was encountered:
-The control loop that checked if the player had lost would not be called if the user did "Rapid fire" and clicked the games faster than the time the health bar took to 
+The control loop that checked if the player had lost would not be called if the user did "Rapid fire" and clicked the game buttons faster than the time the health bar took to refresh. 
+
+It was fixed by adding a global variable that would disable the game buttons after clicking them for one second.
+
+
+## 6. Deployment
+
+The site was deployed to GitHub pages using the following steps:
+- Sign up to GutHub
+- Create a new repository on GitHub.
+- Click on settings on the navigation bar under the repository title.
+- Select pages on the left menu bar.
+- Click on the main branch and save.
+- This will generate a link with your live website.
+- The live link can be found here - (https://rubengardner.github.io/osteopathyweb/)
+
+## Credits
+
+### Code
+* The fonts used in this website came from [Google fonts](https://fonts.google.com/about)
+* The footer code came from the Love Running projects
+* The icons in the footer, instructions sections and game sections came from [Font Awesome](https://fontawesome.com/)
+* The progress bar code representing the health bar came from [CSS Tricks](https://css-tricks.com/html5-progress-element/)
+* The code for making the health bar loose heath in time steps was tacken from stack overflow [Stack Overflow](https://stackoverflow.com/questions/2956966/javascript-telling-setinterval-to-only-fire-x-amount-of-times)
+
+### Content 
+
+* The  images on the help button pop-up was taken from Big Bang Theory fan website  [Big bang theory fandom](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock)
+* The testing content was taken from [dhakal79 project 1 portofolio](https://github.com/dhakal79/Portfolio-project-MS1/blob/master/README.md).
+
+
 
