@@ -1,3 +1,4 @@
+/*Import font from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 /* Change default margin, padding and border to 0 and none */
@@ -7,7 +8,7 @@
   border: none;
 }
   
-/* Style body, headers and Buttons */
+/* Style body, headers and buttons */
 body {
   font-weight: 500;
   color: #000;
@@ -378,7 +379,7 @@ animation: winner 2s;
   100%{transform: translateX(0px);}
   }
 
-.visibility-transition{
+.visibility-transition {
   animation: visibility-popup ;
   animation-duration: 2s;
 }
@@ -389,7 +390,7 @@ animation: winner 2s;
 }
 
 /*Feedback section*/
-#feedback-section{
+#feedback-section {
   font-size: 14pt;
   text-align: center;
 }
@@ -402,14 +403,14 @@ animation: winner 2s;
   width:50%;
 }
 
-#feedback-section h3{
+#feedback-section h3 {
   position: absolute;
   width: 30%;
   left: 35%;
   top: 300px;
 }
 
-label{
+label {
   padding: 10px 0 10px 0;
   font-size: 17pt;
 }
@@ -495,6 +496,4 @@ h1 {
 #game-rules {
   height:350px;
 }
-
-
 }
