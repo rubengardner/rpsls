@@ -12,11 +12,6 @@ Visit the deployed website [here](https://rubengardner.github.io/rpsls/).
 ## Table of Contents
 
 1. [User Experience ](#user-experience)
-    1. [Project Goals](#project-goals)
-    2. [Color Scheme](#color-scheme)
-    3. [Typography](#typography)
-    4. [Contrast check](#contrast-check)
-    4. [Wireframes](#wireframes)
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
@@ -33,9 +28,9 @@ Visit the deployed website [here](https://rubengardner.github.io/rpsls/).
 
 ### Project Goals:
 
-* The website provides a structure that is easy to understand, navigate and to interact with.
+* The website provides a structure that is easy to understand, navigate and interact with.
 
-* Contains fun colors, interactivity and animations to engage the player in the game .
+* Contains fun colours, interactivity and animations to engage the player in the game.
 
 * Responsive design to make the site accessible on different devices.
 
@@ -45,8 +40,8 @@ Visit the deployed website [here](https://rubengardner.github.io/rpsls/).
 
 ### Color Scheme:
 
-Colors used:
-* Back-ground: linear gradient from blue (#4158D0) to  pink (#FFCC70) passing by yellow (#C850C0) in the middle. 
+Colours used:
+* Background: linear gradient from blue (#4158D0) to  pink (#FFCC70) passing by yellow (#C850C0) in the middle. 
 
 * Carrousel slides: A pink (rgba(240, 46, 170, 0.2) on top of a white background (#ffffff), giving a resulting color of pink (#f9abdd)
 
@@ -54,30 +49,30 @@ Colors used:
 
 * Retro-style buttons and links: white (#ffffff) and black (#000000)
 
-* Table displaying the game mechanincs: Green (#0FA300) for the user and purple (#730041) for the enemy.
+* Table displaying the game mechanics: Green (#0FA300) for the user and purple (#730041) for the enemy.
 
-* Wepons selection and help pop-up button: Purple (#730041);
+* Weapons selection and help pop-up button: Purple (#730041);
 
 * Pop up backgrounds: Grey (rgba(85, 85, 85, 1) or #555555)
 
-We used the following technologies to choose the color scheme:
-* [Color palettes](https://mycolor.space/?hex=%23F6CA80&sub=1): Use to find colors that would match
-* [Eye dropper](https://eyedropper.org/): Used to pick color from other sources.
+We used the following technologies to choose the colour scheme:
+* [Color palettes](https://mycolor.space/?hex=%23F6CA80&sub=1): Use to find colours that would match
+* [Eye dropper](https://eyedropper.org/): Used to pick colours from other sources.
 
 ### Contrast check:
 
-We used [WebAIM](https://webaim.org/resources/contrastchecker/) to check accesability, as shown below.
+We used [WebAIM](https://webaim.org/resources/contrastchecker/) to check accessibility, as shown below.
 
-Contrast between black text and light pink boxes:
+The contrast between black text and light pink boxes:
   ![Contrast-check1](./assets/media/contrast_check1.png)
 
-Contrast between purple weapon selection and and pink background:
+The contrast between purple weapon selection and pink background:
   ![Contrast-check2](./assets/media/contrast_check2.png)
 
-Contrast between pop-up text and background:
+The contrast between pop-up text and background:
   ![Contrast-check3](./assets/media/contrast_check3.png) 
 
-Contrast between black welcome text and pink background:
+The contrast between black welcome text and pink background:
   ![Contrast-check4](./assets/media/contrast_check4.png)  
 
 
@@ -87,17 +82,15 @@ The font used in the site is Teko, with Sans Serif as the fallback font in case 
 
 ### Wireframes:
 
-[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
+[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements within the pages.
 
 Here we can see an example of the game section wireframe:
 ![Game section wireframe image](assets/media/game_section_wireframe.png)
 
-[Back to top ⇧](#rpsls)
-
 ## Features
 
 ### Header
-* A navigation bar is placed at the center of the header. Each button has an active effect that gives the sensation of an 3D button being pushed when clicked.
+* A navigation bar is placed at the centre of the header. Each button has an active effect that gives the sensation of a 3D button being pushed when clicked.
 * Each button directs you to the corresponding section
 
 Header screenshot normal:
@@ -110,7 +103,7 @@ Header screenshot active:
 
 ### Footer
 
-* Social media links (for facebook, instagram and Twitter) are placed at the bottom of the page. All the links will open in a new tab. 
+* Social media links (for Facebook, Instagram and Twitter) are placed at the bottom of the page. All the links will open in a new tab. 
 Footer screenshot:
 
  ![Footer page preview](./assets/media/footer.png)
@@ -123,7 +116,7 @@ Footer screenshot:
 
 ### Instructions section
 
-* A section that introduces the game to the user, presenting the different weapons available (rock, paper, scissor, lizzard, spock) for the battle and number of rounds. 
+* A section that introduces the game to the user, presenting the different weapons available (rock, paper, scissor, lizard, Spock) for the battle and the number of rounds. 
 
 * Shows a table with all the possible battle outcomes.
 
@@ -137,9 +130,9 @@ Instruction section screenshot:
 
 * A central and neutral territory that explains the outcome of each round
 
-* Five buttons permitting the user choose between the 5 weapons available 
+* Five buttons permitting the user to choose between the 5 weapons available 
 
-* A buttons with an "?" which displays a pop-up with an image showing who beats who.
+* A button with an "?" displays a pop-up with an image showing who beats who.
 
 Game section screenshot:
 
@@ -147,19 +140,19 @@ Game section screenshot:
 
 ### Help pop-up
 
-* Contains image displaying advantages and disadvantages of each wepon.
+* Contains image displaying advantages and disadvantages of each weapon.
 
-* "Close" button making the pop-up dissapear.
+* "Close" button making the pop-up disappear.
 
 Help pop-up screenshot:
 
 ![Help pop-up preview](./assets/media/help_popup.png)
 
-### Winning or loosing pop-up
+### Winning or losing pop-up
 
-* A pop-up displays the result of the battle once the user or the enemy have no more health
+* A pop-up displays the result of the battle once the user or the enemy have no more health.
 
-* The style of both pop-up is the same, with the animations being different
+* The style of both pop-ups is the same, with the animations being different.
 
 Result pop-up screenshots:
 
@@ -172,11 +165,11 @@ Result pop-up screenshots:
 
 * Contains a form permitting the users to suggest further developments
 
-* Incorporates a simple radio input which permits user to rate their expirience from 1 to 5.
+* Incorporates a simple radio input which permits the user to rate their experience from 1 to 5.
 
-* To submit the form, all fields are requiered.
+* To submit the form, all fields are required.
 
-* When submitted, the submision form opens on a new tab
+* When submitted, the submission form opens on a new tab
 
 Feedback section screenshot:
 
@@ -188,12 +181,12 @@ Form submission screenshot:
 
 ## Technologies used
 
-* [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for structuring and presenting content of the website.
-* [CSS3](https://en.wikipedia.org/wiki/CSS) was used to provide the style to the content written in a HTML.
-* [javaScript](https://en.wikipedia.org/wiki/JavaScript) was used to provide the logic of the game and help with animations.
-* [Balsamiq](https://balsamiq.com/) was used to create wireframes of the website (desktop and mobile version).
-* [Google Fonts](https://fonts.google.com/) was used to import font-family "Lato" and "Oswald" into style,css file and which was used throughout the pages of the website.
-* [Font Awesome](https://fontawesome.com/) was used to improt icons to the sites.
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for structuring and presenting the content of the website.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) was used to provide the style to the content written in HTML.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used to provide the logic of the game and help with animations.
+* [Balsamiq](https://balsamiq.com/) was used to create wireframes of the website.
+* [Google Fonts](https://fonts.google.com/) was used to import font-family "Teko".
+* [Font Awesome](https://fontawesome.com/) was used to import icons to the sites.
 * [Chrome](https://www.google.com/intl/en_uk/chrome/) was used to debug and test the source code.
 * [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site
 * [Github](https://github.com/) was used to create the repository.
@@ -205,34 +198,34 @@ Form submission screenshot:
   
 ### Testing using tools
 
-* Google Developer Tools: Google developer tools (Chrome DevTools) was used as debugging tool. The code was inspected modified here, before changing the source code.
+* Google Developer Tools: Google developer tools (Chrome DevTools) were used as debugging tool. The code was inspected and modified here, before changing the source code.
 
-* [Am I Responsive](http://ami.responsivedesign.is/):site was used to check the responsiveness of the web page
+* [Am I Responsive](http://ami.responsivedesign.is/): site was used to check the responsiveness of the web page
 
-* [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) was used to check for any errors within the HTML pages. Two errors where found that were subsequently fixed.
+* [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) was used to check for any errors within the HTML pages. Two errors were found that were subsequently fixed.
 
-Index page html validation screenshot:
+Index page Html validation screenshot:
   ![Html validation 1](./assets/media/html_errors.png)
 
 
 [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to check for any error within the CSS stylesheet. No errors were found.
 
-Css style sheet validation screenshot:
+CSS style sheet validation screenshot:
   ![Css validation ](./assets/media/css_errors.png)
 
-[JSHints JavaScript Code Quality Tool](https://jshint.com/) was used to check for any error within the CSS stylesheet. As seen in the sreencshot, multiple errors were found. 
+[JSHints JavaScript Code Quality Tool](https://jshint.com/) was used to check for any error within the CSS stylesheet. As seen in the sreenshot, multiple errors were found. 
 
 JavaScript style sheet validation screenshot:
   ![JavaScript validation ](./assets/media/javascript_errors.png)
 
-  Some errors couldn't be fixed because the functionality of th eweb page depend on them. These errors are shown below. 
+  Some errors couldn't be fixed because the functionality of the web page depends on them. These errors are shown below. 
 
 JavaScript style sheet validation screenshot:
   ![JavaScript validation after](./assets/media/js_errors_after.png)
 
-Accessibility	of the page was tested using  lighthouse (chrome developpers tools)
+Accessibility	of the page was tested using lighthouse (chrome developer tools)
 
-Lightouse validation screenshot:
+Lighthouse validation screenshot:
  ![Lighthouse validation](./assets/media/lighthouse.png)
 
 ## Manual testing
@@ -241,35 +234,35 @@ Lightouse validation screenshot:
 
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Home button | on click "home", the browser redirects me to the introduction section .| PASS
-Instructions button|  on click "Instructions", the browser redirects me to the instructions section. | PASS
-Let's play button|  on click "let's play", the browser redirects me to the game section. | PASS
-Feedback button|  on click "booking", the browser redirects me to the feedback section. | PASS
-Responsive | All elements were responsive (mobile and website) using differnt breakpoints.| PASS
+Home button | on clicking  "home", the browser redirects me to the introduction section .| PASS
+Instructions button|  on clicking  "Instructions", the browser redirects me to the instructions section. | PASS
+Let's play button|  on clicking  "let's play", the browser redirects me to the game section. | PASS
+Feedback button|  on clicking  "booking", the browser redirects me to the feedback section. | PASS
+Responsive | All elements were responsive (mobile and website) using different breakpoints.| PASS
 Foreground & background  color| Checked foreground information is not distracted by backgrounds| PASS
-Text|Checked if all fonts and colors used are consistent or not|PASS
+Text|Checked if all fonts and colours used are consistent or not|PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Media| All images and videos on the pages load and played. All images were checked if it blurred in differnt screen sizes| PASS
+Media| All images and videos on the pages load and play. All images were checked if they blurred in different screen sizes| PASS
 
 
 ### Footer
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Facebook | on clicking Facebook icon, a new tab opens and redirects to the Facebook website.| PASS
-Twitter | on clicking Linkedin icon, a new tab opens and redirects to the Twitter website.  | PASS
-Instagram | on clicking instagram icon, a new tab opens and redirects to the instagram website.  | PASS
+Facebook | on clicking the Facebook icon, a new tab opens and redirects to the Facebook website.| PASS
+Twitter | on clicking the Linkedin icon, a new tab opens and redirects to the Twitter website.  | PASS
+Instagram | on clicking the Instagram icon, a new tab opens and redirects to the instagram website.  | PASS
 
 
 ### Game section
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Game buttons| All weapon buttons on clicked select the correct weapon and initiate correctly the game mechanics| PASS
-Animations | Animations display correctly on the user and on the enemy when they loose the round.| PASS
-Health bar | Loose health in time steps when user or enemy loose the round| PASS
+Animations | Animations display correctly on the user and on the enemy when they lose the round.| PASS
+Health bar | Loose health in time steps when the user or the enemy lose the round| PASS
 Rapid fire | Rapid fire of the game mechanics is not permitted| PASS
 Result pop-up| When one of the players ends without health, a pop-up showing the result appears| PASS
 Help pop-up | On clicking the '?' sign, a pop-up appears| PASS
-Closing pop-ups | All pop-ups have closing buttons thst work| PASS
+Closing pop-ups | All pop-ups have closing buttons that work| PASS
 
 ### Feedback section
 TEST            | OUTCOME                          | PASS / FAIL  
@@ -278,7 +271,7 @@ Submit| Checked if submit button works and opens on another tab |PASS
 
 ## Bugs
 
-* A rapid fire bug was encountered:
+* A rapid-fire bug was encountered:
 The control loop that checked if the player had lost would not be called if the user did "Rapid fire" and clicked the game buttons faster than the time the health bar took to refresh. 
 
 It was fixed by adding a global variable that would disable the game buttons after clicking them for one second.
@@ -287,13 +280,13 @@ It was fixed by adding a global variable that would disable the game buttons aft
 ## Deployment
 
 The site was deployed to GitHub pages using the following steps:
-- Sign up to GutHub
+- Sign up to GitHub
 - Create a new repository on GitHub.
 - Click on settings on the navigation bar under the repository title.
 - Select pages on the left menu bar.
 - Click on the main branch and save.
-- This will generate a link with your live website.
-- The live link can be found here - (https://rubengardner.github.io/osteopathyweb/)
+- This will generate a link to your live website.
+- The live link can be found here - (https://rubengardner.github.io/rpsls/)
 
 ## Credits
 
@@ -302,7 +295,7 @@ The site was deployed to GitHub pages using the following steps:
 * The footer code came from the Love Running projects
 * The icons in the footer, instructions sections and game sections came from [Font Awesome](https://fontawesome.com/)
 * The progress bar code representing the health bar came from [CSS Tricks](https://css-tricks.com/html5-progress-element/)
-* The code for making the health bar loose heath in time steps was tacken from stack overflow [Stack Overflow](https://stackoverflow.com/questions/2956966/javascript-telling-setinterval-to-only-fire-x-amount-of-times)
+* The code for making the health bar loose heath in time steps was taken from stack overflow [Stack Overflow](https://stackoverflow.com/questions/2956966/javascript-telling-setinterval-to-only-fire-x-amount-of-times)
 
 ### Content 
 

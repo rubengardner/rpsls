@@ -1,5 +1,9 @@
+//Global variable that fixes the rapid-fire bug
 let clicked;
 
+/* Waits for the DOM to finish loading before running the code
+* Gets the game button elements and adds event listeners to them
+*/
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByClassName('game-button');
     
@@ -13,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+//Runs the round calling all the different functions
 function runGame(weaponElection){
     let enemyElection=enemyWeapon();
       
@@ -26,14 +31,13 @@ function runGame(weaponElection){
     }, 1000);
 }
 
-
+//Chooses randomly the weapon for the enemy
 function enemyWeapon(){
     const weapons=['rock', 'paper', 'scissor', 'lizard', 'spock'];
     const weaponChoice = weapons[Math.floor(Math.random()*weapons.length)];
  
     return weaponChoice;   
 }
-
 
 //Returns winner of between user and enemy
 function battle(weapon1, weapon2){
@@ -143,8 +147,7 @@ function userWin(){
     let health = document.getElementById("enemy-health");
 
     looseHealth(health);
-    
-    //Display final round pop-up: user won.
+    //Displays final round pop-up: user won.
     if (health.value <= 10){
         let victoryPopup = document.getElementById("game-result");
         let message = document.getElementById("result-message");
@@ -153,17 +156,13 @@ function userWin(){
         message.classList.add('user-winner');
         victoryPopup.style.visibility = 'visible';
         message.innerText = "You won!";
-      
-        
-    
     }else{
     //Code runs if there is a round-victory for the user
     document.getElementById('result-text').innerText = 'VICTORY';
     setTimeout(() => document.getElementById('enemy').classList.add("animation-looser"));
-    
-    
-   
-    }}
+    }
+}
+
 //Determines if the enemy won the round or the battle
 function enemyWin(){
     //Calls function that reduces health
@@ -231,7 +230,7 @@ function closePopup() {
     document.getElementById("game-rules").style.visibility = "hidden";
 }
 
-
+// Resets the game section to it's initial state
 function playAgain(){
     //Resets initial 'i' tag for weapon selection and initial message
     let weaponEnemy = document.getElementById('enemy-display');
@@ -249,16 +248,16 @@ function playAgain(){
     document.getElementById("enemy-health").value = 50;
     document.getElementById("user-health").value = 50;
 
-    //Resets final round pop up 
+    //Resets final round pop-up 
     resultPopup.style.visibility = "hidden";
     messageResult.classList.remove('user-winner');
     messageResult.classList.remove('enemy-winner');
     resultPopup.classList.remove('visibility-transition');
-
 }
-/*Code from: https://stackoverflow.com/questions/2956966/javascript-telling-setinterval-to-only-fire-x-amount-of-times
-Every time either the user or the enemy loose a round, they 10 unity of health. This function substracts
-these unity every 80 ms, taking a total of 800 ms per round lost.
+
+/*Health substraction:
+Every time either the user or the enemy lose a round, they lose 10 health points. This function substracts
+a single point every 80 ms, taking a total of 800 ms per round lost.
 */
 function looseHealth(healthBarId){   
     let x = 0;
