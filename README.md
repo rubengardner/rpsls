@@ -1,4 +1,4 @@
-# Rock, paper, scissor, lizzard and spock game
+# Rock, paper, scissor, lizard and Spock game
 
 Rock Paper Scissors Lizard Spock (RPSLS) is an extension of the classic game of chance, Rock Paper Scissors, created by Sam Kass and Karen Bryla. This variant was mentioned in a 2005 article in *The Times* of London and was later the subject of an episode of the American sitcom *The Big Bang Theory* in 2008.
 
