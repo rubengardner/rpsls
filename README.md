@@ -1,16 +1,17 @@
-# RPSLS
-
-![RPSLS mockup images](assets/readme-files/mockup-image.png)
+# Rock, paper, scissor, lizzard and spock game
 
 Rock Paper Scissors Lizard Spock (RPSLS) is an extension of the classic game of chance, Rock Paper Scissors, created by Sam Kass and Karen Bryla. This variant was mentioned in a 2005 article in *The Times* of London and was later the subject of an episode of the American sitcom *The Big Bang Theory* in 2008.
 
 This website is created to have fun playing this game against the computer. The game is entirely based on chance and the website is easy to navigate in order to easily find the rules, the game area and the feedback form in case the user wants to leave any comments.
 
-Visit the deployed website [here](https:).
+Visit the deployed website [here](https://rubengardner.github.io/rpsls/).
+
+![RPSLS mockup images](./assets/media/compatibility_check.png)
+
 
 ## Table of Contents
 
-1. [User Experience (UX)](#user-experience-UX)
+1. [User Experience ](#user-experience)
     1. [Project Goals](#project-goals)
     2. [Color Scheme](#color-scheme)
     3. [Typography](#typography)
@@ -19,18 +20,16 @@ Visit the deployed website [here](https:).
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
-5. [Deployment](#deployment)
-    1. [GitHub Pages](#github-pages)
-6. [Credits](#credits)
-    1. [Content](#content)
-    2. [Media](#media)
-    3. [Code](#code)
+5. [Bugs](#bugs)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+
 
 
 ***
 
 
-## User Experience (UX)
+## User Experience
 
 ### Project Goals:
 
@@ -45,8 +44,6 @@ Visit the deployed website [here](https:).
 * A feedback section is provided to get comments from the player in order to further develop the website.
 
 ### Color Scheme:
-
-
 
 Colors used:
 * Back-ground: linear gradient from blue (#4158D0) to  pink (#FFCC70) passing by yellow (#C850C0) in the middle. 
@@ -189,7 +186,7 @@ Form submission screenshot:
 
 ![Form sbmission preview](./assets/media/form_submission.png)
 
-# 3. Technologies used
+## Technologies used
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for structuring and presenting content of the website.
 * [CSS3](https://en.wikipedia.org/wiki/CSS) was used to provide the style to the content written in a HTML.
@@ -204,9 +201,9 @@ Form submission screenshot:
 * [Ami](http://ami.responsivedesign.is/#) was used to develop a Mockup screenshot generator
 
   
-## 4. Testing
+## Testing
   
-### 4.1 Testing using tools
+### Testing using tools
 
 * Google Developer Tools: Google developer tools (Chrome DevTools) was used as debugging tool. The code was inspected modified here, before changing the source code.
 
@@ -223,10 +220,20 @@ Index page html validation screenshot:
 Css style sheet validation screenshot:
   ![Css validation ](./assets/media/css_errors.png)
 
-[JSHints JavaScript Code Quality Tool](https://jigsaw.w3.org/css-validator/) was used to check for any error within the CSS stylesheet. As seen in the sreencshot, multiple errors were found, subsequently fixed
+[JSHints JavaScript Code Quality Tool](https://jshint.com/) was used to check for any error within the CSS stylesheet. As seen in the sreencshot, multiple errors were found. 
 
 JavaScript style sheet validation screenshot:
   ![JavaScript validation ](./assets/media/javascript_errors.png)
+
+  Some errors couldn't be fixed because the functionality of th eweb page depend on them. These errors are shown below. 
+
+JavaScript style sheet validation screenshot:
+  ![JavaScript validation after](./assets/media/js_errors_after.png)
+
+Accessibility	of the page was tested using  lighthouse (chrome developpers tools)
+
+Lightouse validation screenshot:
+ ![Lighthouse validation](./assets/media/lighthouse.png)
 
 ## Manual testing
 
@@ -242,7 +249,7 @@ Responsive | All elements were responsive (mobile and website) using differnt br
 Foreground & background  color| Checked foreground information is not distracted by backgrounds| PASS
 Text|Checked if all fonts and colors used are consistent or not|PASS
 Accessibility | Checked the accessibility of the page using lighthouse| PASS
-Media| All images and videos on the pages load and played. The video added was not auto play. All images were checked if it blurred in differnt screen sizes| PASS
+Media| All images and videos on the pages load and played. All images were checked if it blurred in differnt screen sizes| PASS
 
 
 ### Footer
@@ -269,7 +276,7 @@ TEST            | OUTCOME                          | PASS / FAIL
 --------------- | -------------------------------- | ---------------
 Submit| Checked if submit button works and opens on another tab |PASS
 
-## 5 Bugs
+## Bugs
 
 * A rapid fire bug was encountered:
 The control loop that checked if the player had lost would not be called if the user did "Rapid fire" and clicked the game buttons faster than the time the health bar took to refresh. 
@@ -277,7 +284,7 @@ The control loop that checked if the player had lost would not be called if the 
 It was fixed by adding a global variable that would disable the game buttons after clicking them for one second.
 
 
-## 6. Deployment
+## Deployment
 
 The site was deployed to GitHub pages using the following steps:
 - Sign up to GutHub

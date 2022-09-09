@@ -7,13 +7,13 @@
   border: none;
 }
   
-  /* Style body, headers and Buttons */
+/* Style body, headers and Buttons */
 body {
   font-weight: 500;
   color: #000;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   font-family: 'Teko', sans-serif;
-  }
+}
   
 .button-style {
   margin: 15px 15px 15px 0;
@@ -30,7 +30,7 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   position: relative;
-  }
+}
   
 .button-style:active {
   box-shadow: 0px 0px 0px 0px;
@@ -41,36 +41,35 @@ body {
 }
 
  /*Header*/
-
 header {
   text-align: center;
   padding: 0 10px 10px 10px;
 }
   
-header li{
+header li {
   display:inline-block;
   text-decoration: none;
   padding: 5px 10px 7px 10px;
 }
 
 /*Footer*/
-footer{
+footer {
   text-align: center;
 }
 
-footer li{
+footer li {
   display:inline-block;
   text-decoration: none;
   padding: 10px 20px 0 20px;
   font-size: 200%;
 }
 
-footer i{
+footer i {
   color: #000;
 }
 
 /*Container carrousel*/
-#container{
+#container {
   background-color: white;
   height: 490px;
   width: 95vw;
@@ -81,10 +80,9 @@ footer i{
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   border-radius: 15px;
-
 }
+
 @keyframes shadow {
-  
   0%   {box-shadow:rgba(240, 46, 170, 0.2) 0px 0px 0px 6px, rgba(240, 46, 170, 0.1) 0px 0px 0px 12px,rgba(240, 46, 170, 0.05) 0px 0px 0px 18px;}
   12.5%   {box-shadow:rgba(240, 46, 170, 0.3) 0px 0px 0px 6px, rgba(240, 46, 170, 0.2) 0px 0px 0px 12px,rgba(240, 46, 170, 0.1) 0px 0px 0px 18px, rgba(240, 46, 170, 0.05) 0px 0px 0px 24px;}
   25%   {box-shadow:rgba(240, 46, 170, 0.4) 0px 0px 0px 6px, rgba(240, 46, 170, 0.3) 0px 0px 0px 12px,rgba(240, 46, 170, 0.2) 0px 0px 0px 18px, rgba(240, 46, 170, 0.1) 0px 0px 0px 24px,  rgba(240, 46, 170, 0.05) 0px 0px 0px 30px;}
@@ -101,29 +99,28 @@ footer i{
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-behavior:smooth;
-    
-  }
+    scroll-behavior:smooth;   
+}
   
-  #slides>section,
-  #slides>div {
-    position: relative;
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 95vw;
-    max-width: 650px;
-    height: 490px;
-    border-radius: 10px;
-    background-color: rgba(240, 46, 170, 0.4);
-  }
+#slides>section,
+#slides>div {
+  position: relative;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 95vw;
+  max-width: 650px;
+  height: 490px;
+  border-radius: 10px;
+  background-color: rgba(240, 46, 170, 0.4);
+}
 
 
-  /*Home section*/
-#home-section{
+/*Home section*/
+#home-section {
   text-align: center;
 }
 
-#home-section > h2{
+#home-section > h2 {
   position:absolute;
   width: 40%;
   left:30%;
@@ -133,6 +130,7 @@ footer i{
   animation-duration: 6s;
   animation-iteration-count: infinite;
 }
+
 @keyframes welcome-sign {
   0%{transform: translateX(-10px)}
   25%{transform: translateX(10px)}
@@ -140,29 +138,29 @@ footer i{
   75%{transform: translateX(10px)}
   100%{transform: translateX(-10px)}
 }
-#home-section > p{
+#home-section > p {
   margin-top:250px;
   font-size: 16pt;
 }
-#home-section > div{
+
+#home-section > div {
   margin-top:50px;
   font-size: 40pt;
 }
 
-
- /*Instruccions section */
-#instructions-section{
+/*Instruccions section */
+#instructions-section {
   text-align: center;
 }
 
-#instructions-section h2{
+#instructions-section h2 {
   position: absolute;
   top:20px;
   width:30%;
   left:35%;
 }
 
-#instructions-section p{
+#instructions-section p {
   width:68%;
   position: absolute;
   top:60px;
@@ -174,7 +172,7 @@ footer i{
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-table{
+table {
   width: 70%;
   position: absolute;
   left: 15%;
@@ -186,24 +184,22 @@ table{
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.user-style{
+.user-style {
   color:#0FA300;
 }
 
-.enemy-style{
+.enemy-style {
   color: #730041;
 }
 
 
 /* Game section*/
-#game-section{
+#game-section {
   text-align: center;
-  font-size: 14pt;
-  
+  font-size: 14pt;  
 }
 
-
-#enemy{
+#enemy {
   border:#000 2px solid;
   width: 50%;
   position: absolute;
@@ -213,30 +209,28 @@ table{
   background-color: rgba(255, 255, 255, 0.5); 
 }
 
-#result-area{
+#result-area {
   width: 50%;
   position: absolute;
   left: 26%;
   top:155px;
 }
 
-#result-text{
+#result-text {
   font-size: 20pt;
 }
 
-#user-area{
+#user-area {
   border:#000 2px solid;
   width: 50%;
   position: absolute;
   left: 25%;
   top:225px;
   padding:5px;
-  background-color: rgba(255, 255, 255, 0.5);
-  
-  
+  background-color: rgba(255, 255, 255, 0.5); 
 }
 
-.animation-looser{
+.animation-looser {
   animation:vibration;
   animation-duration: 1s;
 }
@@ -257,31 +251,26 @@ table{
   100%{transform: translateX(0px);box-shadow:rgba(110,4,26, 0.2) 0px 0px 0px 6px, rgba(110,4,26, 0.1) 0px 0px 0px 12px,rgba(110,4,26, 0.05) 0px 0px 0px 18px;}
   }
 
-#weapon-area{
+#weapon-area {
   position: absolute;
   width:80%;
   left: 12%;
   top:350px;
 }
 
-/* Icons*/
-
-.display-weapons{
+/* Icons displaying weapon selection*/
+.display-weapons {
   font-size: 200%;
   color:#730041;
-  
 }
 
-#open-game-rules{
+#open-game-rules {
   background-color: #730041;
-  
 }
 
-#open-game-rules strong{
+#open-game-rules strong {
  color: #fff;
-  
 }
-
 
 /*Health bar  code:https://css-tricks.com/html5-progress-element/*/
 progress[value]::-webkit-progress-bar {
@@ -289,24 +278,22 @@ progress[value]::-webkit-progress-bar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
   border:#000 2px solid;
 }
+
 progress[value]::-webkit-progress-value {
   background-image:
-	   -webkit-linear-gradient(top, 
-	                           rgba(255, 255, 255, .25), 
-	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)),
 	   -webkit-linear-gradient(left,rgba(240, 46, 170, 0.5), #0FA300);
-
-    background-size: 35px 20px, 100% 100%, 100% 100%;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
 /*Pop up rules*/
-#rules-image{
+#rules-image {
   width: 65%;
   position: absolute;
   left: 17.5%;
 }
 
-#game-rules{
+#game-rules {
   visibility: hidden;
   position:absolute;
   top: 5%;
@@ -318,18 +305,18 @@ progress[value]::-webkit-progress-value {
   text-align: center;
   height: 450px;
   width:80%;
-  }
+}
 
-#close-game-rules{
-  width:20%;
+#close-game-rules {
+  width:40%;
   position: absolute;
   bottom: 10px;
-  left: 40%;
+  left: 30%;
 }
 
 
 /*Game outcome pop up*/
-#game-result{
+#game-result {
   visibility: hidden;
   position:absolute;
   top: 5%;
@@ -343,16 +330,16 @@ progress[value]::-webkit-progress-value {
   width: 90%
 }
 
-#result-message{
+#result-message {
   position: absolute;
-  top:40%;
-  width:50%;
-  left:25%;
+  top:35%;
+  width:90%;
+  left:5%;
   text-align: center;
   font-size: 40pt;
 }
 
-#close-game-result{
+#close-game-result {
   position: absolute;
   width:30%;
   left: 35%;
@@ -361,18 +348,18 @@ progress[value]::-webkit-progress-value {
   font-size: 16pt;
 }
 
-.user-winner{
+.user-winner {
 animation: winner 2s;
 }
 
-.enemy-winner{
+.enemy-winner {
   animation: looser 2s ;
 }
 
 @keyframes winner {
   0%   {font-size: 0pt;}
   20%  {background-color: #fff;}
-  50%  {font-size: 60pt;}
+  50%  {font-size: 50pt;}
 }
 
 @keyframes looser {
@@ -391,15 +378,16 @@ animation: winner 2s;
   100%{transform: translateX(0px);}
   }
 
-  .visibility-transition{
-    animation: visibility-popup ;
-    animation-duration: 2s;
-  }
+.visibility-transition{
+  animation: visibility-popup ;
+  animation-duration: 2s;
+}
 
-  @keyframes visibility-popup {
-    0%{background-color: rgba(85, 85, 85, 0);}
-    100%{background-color:rgba(85, 85, 85, 1);}
-  }
+@keyframes visibility-popup {
+  0%{background-color: rgba(85, 85, 85, 0);}
+  100%{background-color:rgba(85, 85, 85, 1);}
+}
+
 /*Feedback section*/
 #feedback-section{
   font-size: 14pt;
@@ -436,62 +424,77 @@ label{
 }
 
 
-header, header li{
+header,
+header li {
   padding: 0 2px 5px 2px;
 }
 
-#instructions-section p, table, .game-button, #open-game-rules{
+#instructions-section p,
+table, 
+.game-button,
+#open-game-rules {
   font-size: 12pt;
 }
 
-
+#game-rules {
+  left:0;
+  width:100%;
+}
 }
 
 
 @media screen and (max-width: 400px) {
 /*Header*/
-h1{
+h1 {
   font-size: 18pt;
 }
 
-#home-section > h2{
+#home-section > h2 {
   font-size: 40pt;
 }
 
 /*Instructions area*/
-#instructions-section p, table{
+#instructions-section p, table {
   width:90%;
   left:5%;
 }
 /*Game section*/
-#enemy,#user-area{
+#enemy,#user-area {
   width: 70%;
   left: 15%;
 }
 
-#user-area{
+#user-area {
   top:210px;
 }
 
-#weapon-area{
+#weapon-area {
   width:100%;
   left:2%;
   top:320px;
 }
-#result-text{
-  font-size: 15pt;
-}
-.display-weapons, #open-game-rule{
+
+#result-text {
   font-size: 15pt;
 }
 
-#result-area{
+.display-weapons, #open-game-rule {
+  font-size: 15pt;
+}
+
+#result-area {
   width: 80%;
   left: 10%;
   top: 140px;
 }
 
+#result-message {
+  font-size: 30pt;
+}
 
+#game-rules {
+  height:350px;
+}
 
 
 }

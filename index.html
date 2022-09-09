@@ -2,27 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv ="X-UA-Compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissor, Lizzard and Spock</title>
+    <meta name ="description" content="A rock, paper, scissor, lizzard, spock game">
+    <meta name ="keywords"
+    content = "video games, lizzard, spock, rock, paper, scissors, game, battle">
+    <link rel="icon" type="image/x-icon" href="./assets/media/rpsls.webp">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://use.fontawesome.com/c7c28d92b9.js"></script>
 </head>
 <body>
-
     <header>
         <h1>Rock, Paper, Scissor, Lizzard and Spock</h1>
+        <nav>
+        <!--Navigation links-->
         <ul>
             <li><a href="#home-section" class="button-style navigtion"> Home </a> </li>
             <li><a href="#instructions-section" class="button-style navigtion">Instructions </a></li>
             <li><a href="#game-section" class="button-style navigtion">Let's play! </a></li>
             <li><a href="#feedback-section" class="button-style navigtion">Feedback</a></li>
         </ul>
+        </nav>
       </header>
- <!--Scroll container-->
-<div id="container">
+<!--Scroll container-->
+  <div id="container">
     <div id="slides">
-
+      <!--Welcome section-->
         <section id="home-section">
           <h2>Welcome!</h2>
           <p>An incredible "Rock, Paper, Scissor, Lizzard and Spock" battle awaits you! Ready for the fight?</p>
@@ -30,14 +36,13 @@
           <a href="#game-section" class="button-style">Fight</a>
           </div>
         </section>
-
+        <!--Instructions section container-->
         <section id="instructions-section">
             <h2>Instructions</h2>
             <p>This is an extended version of the clasical "Rock, Paper & Scissors" game. 
               In this version there are 5 options to choose as a weapon, adding "Lizzard" and "Spock" to the selection. 
               The first player to win 5 rounds will become the champion! Underneath you can check all the possible outcomes in battle,
                be prepared, you're enemy is waiting!</p>
-            
           <!--Table-->
           <table>
             <tbody>
@@ -107,8 +112,9 @@
             </tbody>
             </table>
           </section>
-
+        <!--Game section-->
         <section id="game-section">
+            <!--Enemy area-->
             <div id="enemy">
                 <h3> Enemy's choice</h3>
                 <div id="enemy-display" class="display-weapons"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
@@ -117,12 +123,12 @@
                   <progress id="enemy-health" value="50" max="50"></progress>
                 </div>
               </div> 
-                  
+              <!--Neutral area, explaining round result-->    
               <div id="result-area">
                 <h3 id="result"> Waiting for your move</h3>
                 <p id="result-text">...</p>
               </div>
-
+              <!--User area-->
               <div id="user-area">
                 <h3> Your choice</h3>
                 <!--Weapon selection display-->
@@ -134,7 +140,7 @@
             </div>   
             <!--Weapon selection buttons-->
             <div id="weapon-area">
-                <div class="weapon-selection">
+              <div class="weapon-selection">
                 <button data-type="rock" class="game-button button-style">
                     <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
                 </button>
@@ -152,20 +158,20 @@
                 </button>
               </div>  
                 <button class="pop-up-button button-style" id="open-game-rules" onclick="openPopup()"><strong>?</strong></button>
-                </div>
+            </div>
                  <!--Pop up displaying the the rules-->
-                <div class="pop-up" id="game-rules">
-                  <h3>Who beats who?</h3>
-                     <img src="assets/media/RPSLS.webp" id="rules-image" alt="Rules of the game">
-                     <div id="close-game-rules"><button  class="close-popup button-style" onclick="closePopup()">Close</button></div>
-                 </div>  
+            <div class="pop-up" id="game-rules">
+              <h3>Who beats who?</h3>
+              <img src="assets/media/rpsls.webp" id="rules-image" alt="Rules of the game">
+              <div id="close-game-rules"><button  class="close-popup button-style" onclick="closePopup()">Close</button></div>
+            </div>  
                  <!--Pop up displaying at the end of the match-->
-                 <div  id="game-result">
-                  <h2 id="result-message">Hello</h2>
-                    <div id="close-game-result"> <button class="close-popup button-style" onclick="playAgain()">Play again!</button></div>
-                 </div>
+            <div  id="game-result">
+              <h2 id="result-message">Hello</h2>
+              <div id="close-game-result"> <button class="close-popup button-style" onclick="playAgain()">Play again!</button></div>
+            </div>
         </section>
-
+        <!--Feedback section-->
         <section id="feedback-section">
           <div id="feedback-form">
             <form action="https://formdump.codeinstitute.net" method="POST" target="_blank">
@@ -174,7 +180,6 @@
                 <br>
                 <input type="text" id="name" name="full-name" class="input-form" required>
                 <br>
-        
                 <label for="email">Email</label>
                 <br>
                 <input type="email" id="email" name="email" class="input-form" required>
@@ -183,7 +188,6 @@
                 <br>
                 <textarea id="comment" name="comment" rows="3" class="input-form" required></textarea>
                 <br>
-        
                 <h3>Poor 1 - Good 5:</h3>
                 <br>
                 <label for="very-poor"> 1 - </label>
@@ -193,28 +197,18 @@
                 <label for="very-good"> 5 </label>
                 <br>
                 <input type="radio" id="very-poor" name="user-experience" value="1">
-                
                 <input type="radio" id="poor" name="user-experience" value="2">
-                
                 <input type="radio" id="neutral" name="user-experience" value="3">
-                
                 <input type="radio" id="good" name="user-experience" value="4">
-                
                 <input type="radio" id="very-good" name="user-experience" value="5">
-                
                 <br>
                 <button class="button-style" type="submit">Send Feedback</button>
-                
             </form>
         </div>
-        
         </section>
-
-
     </div>
 </div>
-
-
+<!--Footer-->
 <footer>
     <!--Links to social media-->
     <ul>
@@ -233,6 +227,6 @@
     </ul>
   
   </footer>
-    <script src="assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
